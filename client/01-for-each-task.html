@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="task"></div>
+  <script>
+    const tasks = [
+      {
+        name: "clean room",
+        day: "morning"
+      },
+      {
+        name: "sweep living room",
+        day: "evening"
+      }
+    ]
+
+    let result = "";
+
+    tasks.forEach(item => {
+      result += `<li>${item.name} - ${item.day}</li>`
+    });
+
+    const task = document.getElementById('task').innerHTML = result;
+
+
+  </script>
+</body>
+
+</html>
